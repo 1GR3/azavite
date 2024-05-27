@@ -3,10 +3,8 @@
 // Import all of Bootstrap's CSS
 
 @import "bootstrap/scss/bootstrap";
-//@import "~bootstrap-icons/font/bootstrap-icons";
 
-//@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
-
+//@import 'node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 
 body {
   header {
@@ -20,7 +18,7 @@ body {
         .bi {
         }
         span {
-          
+
         }
       }
     }
