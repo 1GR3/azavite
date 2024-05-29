@@ -11,12 +11,12 @@
   <link id="theme-style" rel="stylesheet" href="/src/scss/styles.css">
 </head>
 
-<body >
+<body>
   <div class="mx-auto d-flex flex-column min-vh-100">
     <header class="position-fixed w-100 border-bottom">
       <div class="w-100 px-3 py-1 bg-dark text-light">
         <span>Choose a Style Sheet:</h2>
-    
+
           <select id="theme-select" onchange="switchTheme(this.value)">
             <option value="">(none)</option>
             <option value="azavista">Azavista</option>
@@ -62,28 +62,107 @@
         </ol>
       </nav>
     </header>
-    <main class="container px-3">
-      <h1>Title goes here</h1>
-      <p>This is a template for a simple marketing or informational <a href="mailto:ivo@toptal.com">ivo@toptal.com</a>
-        website. It includes a large callout
-        called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more
-        unique.</p>
-      <a href="#" role="button" class="btn btn-primary btn-lg mb-3">Learn more »</a>
-      <div class="row">
-        <div class="col-12 col-md-6 mb-3">
-          <a aza-image-link="" href="#">
-            <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg" alt="description of the image"
-              class="img-fluid">
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a aza-image-link="" href="#">
-            <img src="https://devk8s.azavista.com/asset/661e6ef7badb4cb17ce05e3b/one.jpg" alt="description of the image"
-              class="img-fluid">
-          </a>
+    <main>
+      <!-- title -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <h1>Title goes here</h1>
+          </div>
         </div>
       </div>
-      <h2>test</h2>
+
+      <!-- paragraph -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <p>This is a template for a simple marketing or informational <a
+                href="mailto:ivo@toptal.com">ivo@toptal.com</a>
+              website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as
+              a starting point to create something more unique.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <a href="#" role="button" class="btn btn-primary btn-lg mb-3">Learn more »</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- two column images -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6ef7badb4cb17ce05e3b/one.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- single column paragraph 1 -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce pellentesque quam dui,
+              non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
+              purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
+              aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus. Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- single column paragraph 2 -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce pellentesque quam dui,
+              non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
+              purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
+              aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus. Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- single column paragraph 3 -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce pellentesque quam dui,
+              non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
+              purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
+              aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus. Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </main>
     <footer class="border-top mt-auto fixed-bottom">
       <ul class="container nav px-3">
@@ -129,7 +208,7 @@
     function switchTheme(themeName) {
       document.documentElement.setAttribute('data-bs-theme', themeName);
     }
-    
+
   </script>
 </body>
 
