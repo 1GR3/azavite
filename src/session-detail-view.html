@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <link rel="stylesheet" href="scss/styles.scss">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script type="module" src="./js/main.js"></script>
+  <link id="theme-style" rel="stylesheet" href="/src/scss/styles.css">
+</head>
+
+<body>
+  <div class="mx-auto d-flex flex-column min-vh-100">
+    <header class="position-fixed z-1 w-100 border-bottom">
+      <!-- theme picker -->
+      <div class="w-100 px-3 py-1 bg-dark text-light">
+        <span>Choose a Style Sheet:</h2>
+
+          <select id="theme-select" onchange="switchTheme(this.value)">
+            <option value="">(none)</option>
+            <option value="azavista">Azavista</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+      </div>
+
+      <!-- main navigation -->
+      <nav class="navbar navbar-expand-lg " aria-label="Main navigation">
+        <div class="container px-3">
+          <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/50x30.png?text=Logo" alt="ECA Heart of Football">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+            aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="bi bi-qr-code bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  QRCode
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-info-circle-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Event info
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="bi bi-clipboard2-check-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Registration
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-calendar-check-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Sessions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-eraser-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Clear cache
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- breadcrumb navigation -->
+      <nav class="container px-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 py-1">
+          <li class="breadcrumb-item"><a href="#">Events</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Public Event 1 - Single Day</li>
+        </ol>
+      </nav>
+
+    </header>
+
+    <main>
+      <div class="container px-3 mt-4 mb-3">
+        <div class="row">
+          <div class="col">
+            <h1>Activity 1</h1>
+          </div>
+          <div class="col-auto">
+            <button class="btn">
+              <i class="bi bi-alarm"></i>
+            </button>
+            <button class="btn">
+              <i class="bi bi-bookmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-auto">
+            <i class="bi bi-calendar3 me-2"></i>
+            <span>Apr 5, 2024</span>
+          </div>
+          <div class="col-auto">
+            <i class="bi bi-clock-fill ml-4 me-2"></i>
+            <span>10:00 - 17:00</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <span>Room</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr />
+            <h5>About the Event</h5>
+            <h5>Description</h5>
+            <p>Description</p>
+            <h5>Speaker Information</h5>
+            <p>Speaker info</p>
+            <h5>Venue</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mt-4">
+            <h2>Activity 1 Detail page</h2>
+            <p>This is a template for Robert de Geus a simple
+              marketing or informational website. It includes
+              a large callout called a jumbotron and three
+              supporting pieces of content. Useitasa
+              starting point to create something more
+              unigue.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="border-top mt-auto fixed-bottom">
+      <ul class="container nav px-3">
+        <li class="nav-item col text-center py-2">
+          <a class="text-decoration-none d-flex flex-column align-items-center gap-1 active"
+            href="/a/93/eventapp/events/661289e7061e65f2d3c0c8b5/details/contentpage" aria-current="page">
+            <i class="bi bi-info-circle-fill"></i>
+            <span class="text-capitalize small">Event info</span>
+          </a>
+        </li>
+        <li class="nav-item col text-center py-2">
+          <a class="text-decoration-none d-flex flex-column align-items-center gap-1"
+            href="/a/93/eventapp/events/661289e7061e65f2d3c0c8b5/details/embedpage">
+            <i class="bi bi-chat-dots-fill"></i>
+            <span class="text-capitalize small">Chat</span>
+          </a>
+        </li>
+        <li class="nav-item col text-center py-2">
+          <a class="text-decoration-none d-flex flex-column align-items-center gap-1"
+            href="/a/93/eventapp/events/661289e7061e65f2d3c0c8b5/details/embedpage">
+            <i class="bi bi-qr-code"></i>
+            <span class="text-capitalize small">Scan</span>
+          </a>
+        </li>
+        <li class="nav-item col text-center py-2">
+          <a class="text-decoration-none d-flex flex-column align-items-center gap-1"
+            href="/a/93/eventapp/events/661289e7061e65f2d3c0c8b5/details/activity">
+            <i class="bi bi-calendar-check-fill"></i>
+            <span class="text-capitalize small">Sessions</span>
+          </a>
+        </li>
+        <li class="nav-item col text-center py-2">
+          <a class="text-decoration-none d-flex flex-column align-items-center gap-1"
+            href="/a/93/eventapp/events/661289e7061e65f2d3c0c8b5/details/embedpage">
+            <i class="bi bi-person-fill"></i>
+            <span class="text-capitalize small">Profile</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script>
+    function switchTheme(themeName) {
+      document.documentElement.setAttribute('data-bs-theme', themeName);
+    }
+
+  </script>
+</body>
+
+</html>

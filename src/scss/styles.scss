@@ -2,6 +2,11 @@
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/functions";
+
+
+
+$primary: #4e8f09;
+
 // Required
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
@@ -47,6 +52,43 @@
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
+
+.breakpoint-indicator {
+  position: relative;
+}
+
+.breakpoint-indicator::before {
+  content: "XS";
+  display: block;
+  padding: 5px;
+  background-color: #f8d7da;
+  color: #721c24;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 576px) {
+  .breakpoint-indicator::before { content: "SM"; background-color: #d4edda; color: #155724; }
+}
+
+@media (min-width: 768px) {
+  .breakpoint-indicator::before { content: "MD"; background-color: #cce5ff; color: #004085; }
+}
+
+@media (min-width: 992px) {
+  .breakpoint-indicator::before { content: "LG"; background-color: #f8d7da; color: #721c24; }
+}
+
+@media (min-width: 1200px) {
+  .breakpoint-indicator::before { content: "XL"; background-color: #fff3cd; color: #856404; }
+}
+
+@media (min-width: 1400px) {
+  .breakpoint-indicator::before { content: "XXL"; background-color: #d1ecf1; color: #0c5460; }
+}
+
 body {
 
   header {
@@ -62,12 +104,18 @@ body {
       }
     }
 
+    .dropdown-menu {
+    }
+
     .breadcrumb {
       .breadcrumb-item a {}
     }
   }
 
   main {
+    .sticky-top {
+      top: 123px;
+    }
     padding-top: 150px;
     padding-bottom: 100px;
   }
@@ -90,7 +138,6 @@ body {
   [data-bs-theme="azavista"] {
     header {
       background-color: white;
-
       .navbar {
 
         .navbar-brand,
@@ -109,7 +156,21 @@ body {
     }
 
     // components/_main.scss
-    main {}
+    main {
+      .sticky-top {
+        background-color: white;
+      }
+      #session-list {
+        li {
+          a {
+            border-radius: .5rem;
+            box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+            padding: .5rem .75rem;
+            margin-bottom: .5rem;
+          }
+        }
+      }
+    }
 
     // components/_footer.scss
     footer {
@@ -140,6 +201,11 @@ body {
     $body-bg: #efebe6;
     $border-radius: 1rem;
     --bs-btn-bg: $primary;
+
+    --bs-body-bg: #fff2d2;
+    --bs-body-color: #212529;
+    --bs-primary: #2ab24a;
+    --bs-secondary: #6c757d;
     body {
       background-color: $body-bg;
     }

@@ -13,7 +13,8 @@
 
 <body>
   <div class="mx-auto d-flex flex-column min-vh-100">
-    <header class="position-fixed w-100 border-bottom">
+    <header class="position-fixed z-1 w-100 border-bottom">
+      <!-- theme picker -->
       <div class="w-100 px-3 py-1 bg-dark text-light">
         <span>Choose a Style Sheet:</h2>
 
@@ -24,44 +25,65 @@
             <option value="dark">Dark</option>
           </select>
       </div>
-      <nav class="container px-3 navbar navbar-expand-lg navbar-light w-100 border-bottom">
-        <a class="navbar-brand" href="#">
-          <img src="https://via.placeholder.com/50x30.png?text=Logo" alt="ECA Heart of Football">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="list-group rounded-0 d-none">
-          <li class="d-flex align-items-center lh-lg gap-3 list-group-item border-start-0 border-end-0 py-3 px-4">
-            <i class="bi bi-qr-code bg-body-tertiary text-dark rounded-circle p-2 fs-5"></i>
-            <span>QRCode</span>
-          </li>
-          <li class="d-flex align-items-center lh-lg gap-3 list-group-item border-start-0 border-end-0 py-3 px-4">
-            <i class="bi bi-info-square-fill bg-body-tertiary text-dark rounded-circle p-2 fs-5"></i>
-            <span>Event info</span>
-          </li>
-          <li class="d-flex align-items-center lh-lg gap-3 list-group-item border-start-0 border-end-0 py-3 px-4">
-            <i class="bi bi-info-square-fill bg-body-tertiary text-dark rounded-circle p-2 fs-5"></i>
-            <span>Registration</span>
-          </li>
-          <li class="d-flex align-items-center lh-lg gap-3 list-group-item border-start-0 border-end-0 py-3 px-4">
-            <i class="bi bi-info-square-fill bg-body-tertiary text-dark rounded-circle p-2 fs-5"></i>
-            <span>Sessions</span>
-          </li>
-          <li class="d-flex align-items-center lh-lg gap-3 list-group-item border-start-0 border-end-0 py-3 px-4">
-            <i class="bi bi-eraser-fill bg-body-tertiary text-dark rounded-circle p-2 fs-5"></i>
-            <span>Clear cache</span>
-          </li>
-        </ul>
+
+      <!-- main navigation -->
+      <nav class="navbar navbar-expand-lg " aria-label="Main navigation">
+        <div class="container px-3">
+          <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/50x30.png?text=Logo" alt="ECA Heart of Football">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+            aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="bi bi-qr-code bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  QRCode
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-info-circle-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Event info
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="bi bi-clipboard2-check-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Registration
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-calendar-check-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Sessions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-eraser-fill bg-body-tertiary rounded-circle p-2 fs-5"></i>
+                  Clear cache
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+
+      <!-- breadcrumb navigation -->
       <nav class="container px-3" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0 py-1">
           <li class="breadcrumb-item"><a href="#">Events</a></li>
           <li class="breadcrumb-item active" aria-current="page">Public Event 1 - Single Day</li>
         </ol>
       </nav>
+
     </header>
+
     <main>
       <!-- title -->
       <div class="container px-3">
@@ -133,7 +155,8 @@
       <div class="container px-3">
         <div class="row">
           <div class="col-12 col">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce pellentesque quam dui,
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce
+              pellentesque quam dui,
               non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
               purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
               aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus. Nunc vel ligula
@@ -159,6 +182,113 @@
               In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
               Phasellus ut fringilla turpis. Nullam et tempus orci.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- double column paragraph 1 -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce pellentesque quam dui,
+              non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
+              purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
+              aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+              Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- one column images -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg"
+                alt="description of the image" class="img-fluid w-100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- three column images -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6ef7badb4cb17ce05e3b/one.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6ef7badb4cb17ce05e3b/one.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- video - one column -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col mb-3">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/WF34N4gJAKE?si=MlDNVPiWXjSpYGhl" title="YouTube video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- image + text = 2 columns -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+              Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- google map -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col mb-3">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151940.26417510654!2d-74.12687212762359!3d40.71481842542527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shr!4v1716982906305!5m2!1sen!2shr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>

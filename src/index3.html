@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <link rel="stylesheet" href="scss/styles.scss">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script type="module" src="./js/main.js"></script>
+  <link id="theme-style" rel="stylesheet" href="/src/scss/styles.css">
+</head>
+
+<body>
+  <div class="mx-auto d-flex flex-column min-vh-100">
+    <header class="position-fixed z-1 w-100 border-bottom">
+      <!-- theme picker -->
+      <div class="w-100 px-3 py-1 bg-dark text-light">
+        <span>Choose a Style Sheet:</h2>
+
+          <select id="theme-select" onchange="switchTheme(this.value)">
+            <option value="">(none)</option>
+            <option value="azavista">Azavista</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+      </div>
+
+      <!-- main navigation -->
+      <nav class="navbar navbar-expand-lg " aria-label="Main navigation">
+        <div class="container px-3">
+          <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/50x30.png?text=Logo" alt="ECA Heart of Football">
+          </a>
+
+          <div class="dropdown" >
+            <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-globe2"></i>
+              EN
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">EN</a></li>
+              <li><a class="dropdown-item" href="#">DE</a></li>
+              <li><a class="dropdown-item" href="#">NL</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- breadcrumb navigation -->
+      <nav class="container px-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 py-1">
+          <li class="breadcrumb-item"><a href="#">Events</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Public Event 1 - Single Day</li>
+        </ol>
+      </nav>
+
+    </header>
+
+    <main>
+      <div class="container-fluid sticky-top border-bottom mb-3">
+        <div class="container w-100 px-3 py-3">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-xl-4">
+              <img src="https://devk8s.azavista.com/asset/66128dd7badb4cb17ce05d45/Icon" class="w-100 img-fluid">
+            </div>
+            <div class="col-12 col-lg-6 col-xl-8 mt-lg-auto">
+              <div class="row pt-3 ">
+                <div class="col-12">
+                  <h5 class="">Public Event 1 - Single Day Public Event 1 - Single Day</h5>
+                </div>
+                <div class="col-6 col-md-auto"><i class="bi bi-calendar"></i><span class="ms-2">Apr 27 2024</span></div>
+                <div class="col-6 col-md-auto text-end">
+                  <i class="bi bi-clock-fill"></i>
+                  <span class="ms-2">10:00 AM</span>
+                </div>
+                <div class="col-12 d-none d-lg-flex">
+                  <button class="btn btn-primary btn-lg text-uppercase w-100 mt-3">Join event</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- title -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <h1>Title goes here</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- two column images -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6ef7badb4cb17ce05e3b/one.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- single column paragraph 2 -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce
+              pellentesque quam dui,
+              non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
+              purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
+              aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus. Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- double column paragraph 1 -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non justo sem. Fusce pellentesque quam dui,
+              non euismod sapien tristique tristique. Cras luctus leo erat, in placerat justo ornare in. Nunc neque
+              purus, ullamcorper id nulla eget, tincidunt sagittis magna. Mauris diam erat, auctor sit amet magna ac,
+              aliquam dignissim justo. Mauris vitae tellus in turpis pharetra placerat in vel tellus.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+              Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- image + text = 2 columns -->
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <a aza-image-link="" href="#">
+              <img src="https://devk8s.azavista.com/asset/661e6efdbadb4cb17ce05e3d/two.jpg"
+                alt="description of the image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+              Nunc vel ligula
+              sagittis, pulvinar urna in, pretium ex. Mauris accumsan et massa eleifend dignissim. Donec tortor felis,
+              ultricies in vehicula et, convallis quis nulla. Sed vel ultrices tellus, et suscipit odio. Nulla facilisi.
+              In auctor, mi quis venenatis accumsan, justo nulla posuere ligula, in lacinia metus orci sit amet quam.
+              Phasellus ut fringilla turpis. Nullam et tempus orci.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <footer class="border-top mt-auto fixed-bottom">
+      <div class="container px-3 py-2 d-flex d-lg-none">
+        <button class="btn btn-primary btn-lg text-uppercase w-100">Join event</button>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function switchTheme(themeName) {
+      document.documentElement.setAttribute('data-bs-theme', themeName);
+    }
+
+  </script>
+  <script>
+
+</script>
+</body>
+
+</html>
